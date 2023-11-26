@@ -5,6 +5,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ContactController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +18,7 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('component.home');
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name("home");
